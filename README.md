@@ -1,2 +1,2 @@
 # Todo-app
-a easy demo
+a easy demo for try learn 
