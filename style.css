@@ -19,7 +19,7 @@ body {
     background-color: white;
     padding: 20px;
     border-radius: 200px;
-    box-shadow: 10 10 10px rgba(59, 229, 238, 0.1);
+    box-shadow: 0 2px 3px rgba(59, 229, 238, 0.1);
     width: 500px;
 }
 
@@ -34,8 +34,9 @@ button {
     width: 100%;
     padding: 8px;
     background-color: #4caf50;
-    color: black;
     /* 标签中的内容颜色 */
+    color: black;
+    /* 设置边框的属性和样式 */
     border: none;
     border-radius: 4px;
 }
