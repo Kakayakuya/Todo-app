@@ -8,22 +8,34 @@ p {
 
 body {
     font-family: "Times New Roman", Times, serif;
-    background-color: coral;
+    background-color: #f5f5f5;
     /* 作为 一个弹性容器 */
     display: flex;
     justify-content: center;
+    padding-top: 50px;
 }
 
-#add-btn {
+.todo-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 200px;
+    box-shadow: 10 10 10px rgba(59, 229, 238, 0.1);
+    width: 500px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
     background-color: #4caf50;
-    color: white;
+    color: black;
+    /* 标签中的内容颜色 */
     border: none;
-    padding: 10px 16px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#add-btn:hover {
-    background-color: #45a049;
+    border-radius: 4px;
 }

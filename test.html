@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Flex Demo</title>
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                background: lightgray;
+                height: 200px;
+                align-items: center;
+            }
+            .box {
+                width: 60px;
+                height: 60px;
+                background: tomato;
+                margin: 5px;
+            }
+
+            button {
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <button>hit</button>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
