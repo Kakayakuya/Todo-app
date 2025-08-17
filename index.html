@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>我的待办事项</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>我的 Todo 应用</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            font-family: Arial;
+            color: #333;
+            /* 和下一个元素之间的间距 */
+            margin-bottom: 30px;
+            /* 让文字保持在中间位置 */
+            text-align: center;
+        }
+
+        .input-section {
+            display: flex;
+            background-color: antiquewhite;
+            margin-bottom: 30px;
+            gap: 10px;
+        }
+
+        .container {
+            /* 设置整个容器的颜色 */
+            background-color: white;
+            padding-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        input {
+            /* 调整输入框的圆角 */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
         <h1>📝 我的待办事项</h1>
-        <input type="text" placeholder="请输入待办事项" />
-        <button>添加</button>
+        <div class="input-section">
+            <input type="text" id="todoInput" placeholder="输入新的待办事项..." />
+            <button>添加</button>
+        </div>
         <ul id="todoList"></ul>
-        <script src="script.js"></script>
-    </body>
+    </div>
+    <script></script>
+</body>
+<script>
+    // get elements
+    const input = document.getElementById('todoInput');
+    const button = document.querySelector('button');
+    const list = document.getElementById('todoList');
+
+    // click button, run function
+    button.onclick = function () {
+
+        // if input content is not null
+        if (input.value !== '') {
+            const li = document.createElement('li')
+            // add li to list
+            list.appendChild(li);
+            li.textContent = input.value;
+
+            // clear inout content
+            input.value = '';
+        }
+    };
+
+</script>
+
 </html>
